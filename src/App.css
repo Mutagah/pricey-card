@@ -1,38 +1,108 @@
-.App {
+.current-plan {
+  background-color: #bc1e4a;
+  color: white;
   text-align: center;
-}
+  width: 18rem;
+  margin: 0 auto 50px auto;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  p {
+    font-size: 0.938rem;
+    font-weight: lighter;
+  }
+  h5 {
+    font-size: 1.1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.plan-container {
+  text-align: center;
+  color: white;
+  padding: 15px;
+  h3 {
+    font-size: 30px;
+  }
+}
+
+.card {
+  position: relative;
+  width: calc(100% / 3);
+  height: 450px;
+  color: red;
+  background-color: #22262c;
+  margin: 10px;
+  padding: 25px 0;
+  border-radius: 8px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: end;
+  h3 {
+    font-size: large;
+  }
+  p {
+    font-size: 35px;
+    font-weight: 750;
+  }
+  button {
+    border: 2px solid #bc1e4a;
+    margin: 20px;
+    width: 150px;
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+  }
+  button:hover {
+    background-color: #bc1e4a;
+  }
+  .list-features {
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+}
+
+.card-header {
+  text-align: center;
   color: white;
+  padding: 15px;
+  margin-top: 20px;
+  top: 0;
+  position: absolute;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.subscript-tags {
+  font-size: medium;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select-package {
+  margin: 20px 0 0 1px;
+  border: 2px solid #2c3036;
+  width: 80%;
+  height: 43px;
+  background-color: #22262c;
+  color: #6f7276;
+  padding-left: 20px;
+}
+
+#select-tag {
+  font-size: smaller;
+  font-weight: 400;
+  color: #6c213a;
+}
+
+ul {
+  list-style-type: disc;
+  padding: 0;
+}
+
+li {
+  margin-left: 55px;
+  padding: 8px 0 0 10px;
+  color: #797b7f;
+}
+li::marker {
+  color: #a81f45;
 }
